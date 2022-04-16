@@ -1,7 +1,7 @@
 /*^^^^^^^^^ @imports ^^^^^^^^*/
 /*^^^^^^^^^ tags ^^^^^^^^^^^^*/
 body {
-    background-color: #51008f;
+    background-color: #a84af0;
 }
 
 /*^^^^^^^^^ Variáveis ^^^^^^^^*/
@@ -11,6 +11,7 @@ body {
     --singup-textbox: 90%;
     --font-title-project: medium;
     --icon-img-card: 20vw;
+    --font-nav: 63%;
 
 }
 
@@ -21,9 +22,69 @@ body {
         --singup-textbox: 70%;
         --font-title-project: x-large;
         --icon-img-card: 7vw;
+        --font-nav: 100%;
     }
 }
+/*^^^^^^^^^^^^^^^^ navbar provisória, apenas para testar uns elementos do layout ^^^^^^^^^^^^^^^^*/
+nav {
+    padding: 0;
+    margin: 0;
+    background-color: #51008f;
+}
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: var(--font-nav);
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    transition-duration: 0.7s;
+    -webkit-transition-duration: 0.7s;
+    padding: 3vh;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/*^^^^^^^^^^^^^^^^coluna^^^^^^^^^^^^^^^^*/
+.coluna {
+    width: 100%;
+    font-size: 20px;
+    font-family: Haettenschweiler;
+    background-color: red;
+}
+
+.coluna div {
+    list-style: none;
+    width:207px;
+    margin:15px;
+    display:inline-block;
+    background-color: #282828;
+    border-right:0px solid #1EB1FF;
+}
+.coluna div a{
+    padding: 15px 25px;
+    color: #e6dfdf;
+    text-decoration: none;
+    font-family:Haettenschweiler;
+}
+.coluna ul li a:hover{
+    color: #2AE8D8;
+    background-color: #151515;
+}
 /*^^^^^^^ Sing in e Sing up ^^^^^^^^^^^^^^*/
 
 .container {
@@ -59,7 +120,7 @@ body {
     border-radius: 5px;
     outline: none;
     font-size: medium;
-    padding: 5px 5px 5px 10px;
+    padding: 5px 10px;
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
 }
@@ -88,7 +149,7 @@ input::placeholder {
 }
 
 .box button:hover {
-    background-color: #30c922;
+    background-color: #51008f;
 }
 
 /*^^^^^^^^^^^^^^^^^^^^ Projetos e Atribuições ^^^^^^^^^^^^^^^^^^^^^^^^*/
@@ -98,13 +159,14 @@ input::placeholder {
     height: auto;
     margin: 2vh 5vh 0vh 5vh;
     text-align: center;
-    padding: 5vh;
+    padding: 1vh;
     font-family: 'Roboto Mono', monospace;
     color: #fff;
     font-size: 150%;
+    border-radius: 5px;
 }
 
-.card input{
+.card input {
     width: 70%;
     height: 5vh;
     /*font-size: 3vh;
@@ -115,13 +177,22 @@ input::placeholder {
     margin: 3%;*/
     outline: 0;
 }
-.card button{
+
+.pesquisa {
     height: 5vh;
-    font-size: 50%;   
+    font-size: 50%;
     font-family: 'Courier New', Courier, monospace;
     margin: 3vw;
     background-color: #51008f;
     color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+.pesquisa:hover {
+    background-color: #8022C9;
 }
 
 .card img {
@@ -131,11 +202,30 @@ input::placeholder {
 
 .card p {
     font-size: 70%;
-    padding: 3%;
+    padding: 1%;
 }
-.card a{
+
+/*.card a{
     color: black;
-}
-.card p a{
+}*/
+.details {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    color: black;
+    font-style: bold 3px;
     background-color: #ADADAD;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+.details:hover {
+    background-color: #8022C9;
+    color: #fff;
+}
+
+.card p a {
+    background-color: #ADADAD;
+    border-radius: 5px;
 }

@@ -8,16 +8,32 @@
     <title>Projetos</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="areadetrabalho.html">Area de trabalho</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="atribuicoes.html">Atribuições</a></li>
+        </ul>
+    </nav>
     <div class="card">
-        <input type="text"> <button>Pesquisar</button>
+        <input type="text"> <button class="pesquisa trigger" onclick="showModal()">Pesquisar</button>
     </div>
     <div class="card">
-        <img src="img/logo.png" alt="logo Project"><br>
-        <a href="#" class="title">Project Red</a>
-        <p><a href="">#LoremIpsum</a> <a href="">#Lorem_Ipsum</a> <a href="">#LoremIpsum</a> <a href="">#Lorem_Ipsum</a></p>
+        <img src="img/project.gif" alt="logo Project"><br>
+        <!--<a href="#" class="title">Project Red</a>-->
+        <button class="details trigger" onclick="showModal()"> Project Aestetic</button>
+        <p><a href="">#LoremIpsum</a> <a href="">#Lorem_Ipsum</a> <a href="">#LoremIpsum</a> <a href="">#Lorem_Ipsum</a>
+        </p>
+    </div>
+    <div class="card">
+        <img src="img/project.gif" alt="logo Project"><br>
+        <!--<a href="#" class="title">Project Red</a>-->
+        <button class="details trigger" onclick="showModal()"> Project Aestetic</button>
+        <p><a href="">#LoremIpsum</a> <a href="">#Lorem_Ipsum</a></p>
     </div>
 </body>
 
