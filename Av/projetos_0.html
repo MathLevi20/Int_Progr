@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <i  href="#"><img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24"> </i>
+          </li>
+          <li class="nav-item">
+            <a href="#">Area de Trabalho</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Atribuições</a>
+        </ul>
+      </nav>
+      <section class="container">  
+      <h3 class="titulo">Projetos</h3>
+
+<div class="search">Digite o codigo do projeto: <input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Inserir codigo do projeto"></div>
+
+<button class="collapsible">
+  
+ 
+    <div class="card-u"><img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24"></div>
+    <div class="card-u">
+    <a class="card-user" href="#"> Projeto Visio </a><p class="card-user">Tags: #edição #webdev #dev #banco de dados #back-end</p>
+   </div></button>
+<div class="content">
+  <p class="descrição">Descrição:Projeto voltado para o reconhecimento de imagem em Python</p>
+  <p class="descrição">Criado:16/01/2023</p>
+  <p class="descrição">ID:Visio@153</p>
+  <div class="profile-card">
+  <ul>
+    <li class="user"><div class="profile-pic">
+      <img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24">
+            </div>
+            <div>
+            <p class="username">User01</p>
+            </div>
+          </li>
+      <li class="user"><div class="profile-pic">
+        <img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24">
+               </div>
+              <div>
+              <p class="username">User01</p>
+      </div></li>
+    </ul>
+</div>
+</div>
+<button class="collapsible">
+  
+ 
+  <div class="card-u"><img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24"></div>
+  <div class="card-u">
+  <a class="card-user" href="#"> Projeto Visio </a><p class="card-user">Tags: #edição #webdev #dev #banco de dados #back-end</p>
+ </div></button>
+<div class="content">
+<p class="descrição">Descrição:Projeto voltado para o reconhecimento de imagem em Python</p>
+<p class="descrição">Criado:16/01/2023</p>
+<p class="descrição">ID:Visio@153</p>
+<div class="profile-card">
+ <ul>
+  <li class="user"><div class="profile-pic">
+    <img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24">
+          </div>
+          <div>
+          <p class="username">User01</p>
+          </div>
+        </li>
+    <li class="user"><div class="profile-pic">
+      <img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24">
+             </div>
+            <div>
+            <p class="username">User01</p>
+    </div></li>
+  </ul></div>
+</div>
+
+</section>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Code by Angela Delise 
+        https://codepen.io/angeladelise/pen/yLYPyMq
+      -->
+</head> 
+
+      <body>
+        <!-- Proper html tag is nav not navbar   -->
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <i  href="#"><img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24"> </i>
+            </li>
+            <li class="nav-item">
+              <a href="#">Area de Trabalho</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Atribuições</a>
+          </ul>
+        </nav>
+      <div class="main">
+        <section class="container">    
+        <h3 class="titulo">Colunas</h3>
+        <button class="collapsible">Em espera</button>
+        <div class="content">
+         
+          <ul>
+            <li  class="cards" >  <a class="cards" href="#">Marca reunião com o João Marcelo as 15h (15/04/2023)</a>  </li>
+            </ul>
+        </div>
+        <button class="collapsible">Fazendo</button>
+        <div class="content">
+          <ul>
+          
+          <li class="cards" ><a class="cards" href="#">Determinar a taxa de erros</a></li>  
+          <li class="cards" ><a class="cards" href="#">Fazer modelo DER do banco de dados (Aplicativo)</a></li>
+          </ul>
+        </div>
+        <button class="collapsible">Completo</button>
+        <div class="content">
+          <ul>
+            <li class="cards" > <a class="cards" href="#">Exibir Prototipo</a></li>
+            </ul>
+        </div>
+        </section > 
+      </div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+      </body>
+</html>

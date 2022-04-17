@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <i  href="#"><img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24"> </i>
+          </li>
+          <li class="nav-item">
+            <a href="#">Area de Trabalho</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Atribuições</a>
+        </ul>
+      </nav>
+<div class="container">
+<div ><p>
+  <img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24">
+  <a href="#"> Projeto Visio </a>Tags: #edição #webdev #dev #banco de dados #back-end</p>
+  <p class="descrição">Descrição:Projeto voltado para o reconhecimento de imagem em Python</p>
+  <p class="descrição">Criado:16/01/2023</p>
+  <p class="descrição">ID:Visio@153</p>
+  <p class="descrição"><img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24">User01</p>
+  <p class="descrição"><img src ="logo.png" class="menu" width="34" height="34" viewBox="0 0 24 24">User02</p>
+</div>
+<div class="content">
+
+</div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
