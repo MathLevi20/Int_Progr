@@ -63,28 +63,51 @@ nav ul li a:hover {
 }
 
 /*^^^^^^^^^^^^^^^atribuiçoes ^^^^^^^^^^^^^^^*/
-.notificacao{
-    background-color: #fff;
+.details-card{
+    background-color: rgb(255, 255, 255);
     margin: 2% var(--notification-padding);
     padding: 2%;
     border-radius: 5px;
 }
-.notificacao h1 a{
+.details-card h1{
     font-size: x-large;
     font-family: 'Courier New', Courier, monospace;
     color: black;
     text-decoration: none;
 }
-.notificacao h1 a:hover{
-    color: #51008f;
+.details-card p{
+    text-indent: 5%;
+    text-align: justify;
+    font-size: medium;
+    margin: 3%;
 }
-.notificacao p{
+.teste-notificacao{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 2% var(--notification-padding);
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.teste-notificacao h1 a{
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-decoration: none;
+}
+
+.teste-notificacao img{
+    width: 70%;
+    border-radius: 50%;
+    margin: 1vh;
+}
+.teste-notificacao p{
     text-indent: 3%;
     text-align: justify;
     font-size: medium;
     margin: 1%;
 }
-
 
 /*^^^^^^^ Sing in e Sing up ^^^^^^^^^^^^^^*/
 
@@ -152,7 +175,7 @@ input::placeholder {
     background-color: #51008f;
 }
 
-/*^^^^^^^^^^^^^^^^^^^^ Projetos e Atribuições ^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^^^^^^^^^^ Projetos ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .card {
     background-color: #ffffff;
     backdrop-filter: blur(5px);
