@@ -1,4 +1,5 @@
 ﻿@media (min-width: 300px) and (max-width: 800px){
+ 
   .nav-iten{
     min-height: 50px;
     height: 20px; 
@@ -18,9 +19,9 @@
       background-color: rgb(129, 13, 129);
       box-shadow: 0px 0px 10px var(--clr-gray200);
       border-radius: var(--radius);
-      display:list-item !important; 
-      justify-content:center!important;
-      align-items: center;
+    }
+    .content{
+      width: auto;
     }
 }
 :root {
@@ -48,7 +49,7 @@
     background: var(--clr-gray100);
     padding: 0;
     margin: 0;
-
+    background-color: #8022C9;
   }
   
   .nav-list {
@@ -57,12 +58,12 @@
     border-radius: var(--radius);
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items:flex-end;
   }
   
   .nav-item {
     padding-top: 1rem ;
-    padding-bottom: 1rem ;
+    padding-bottom: 0.5rem ;
     padding-left: 0.5rem ;
     padding-right: 0.5rem ;
     list-style: none;
@@ -70,6 +71,7 @@
   
 
    .nav-item a {
+    padding-top: 1rem ;
     padding:1rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -125,7 +127,7 @@
   padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
-  
+  padding: 10px;
 }
 .titulo{
   padding: 10px;
@@ -227,6 +229,8 @@
   padding: 0.5rem;
   text-align: left;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .add-card-btn:hover {
@@ -253,34 +257,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
       grid-template-rows: 4rem 3rem auto;
       grid-row-gap: 0.8rem;
   }
-
-  .masthead {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      grid-column-gap: 2rem;
-  }
-
-  .boards-menu {
-      display: grid;
-      grid-template-columns: 9rem 18rem;
-      grid-column-gap: 0.8rem;
-  }
-
-  .user-settings {
-      display: grid;
-      grid-template-columns: repeat(4, auto);
-      grid-column-gap: 0.8rem;
-  }
-
-  .board-controls {
-      display: grid;
-      grid-auto-flow: column;
-      grid-column-gap: 1rem;
-  }
-
+  
   .lists-container {
-      display: grid;
-      grid-auto-columns: 27rem;
+
       grid-auto-flow: column;
       grid-column-gap: 1rem;
   }
@@ -297,11 +276,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
   .logo,
   .list,
-  .list-items li,
-  .boards-btn,
-  .board-info-bar,
-  .board-controls .btn,
-  .user-settings-btn {
+  .list-items li {
       margin: 0;
   }
 }
@@ -315,12 +290,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 
 .username{
-  
+  color: black;
   width: 100%;
   overflow: hidden;
   font-size: 12px ;
   margin-top: 5px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0);
 }
 .user{
  display: inline-block;
@@ -390,10 +365,260 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 .margin{
   padding: 10px;
-
+  background-color: white;
 }
 .comentarios{
   padding: 10px;
 }.comentarios-bar{
   padding-left: 90px;
+}
+.conteiner-area{
+  padding: 20px;
+}
+.container-projeto{
+  background-color: #ccc;
+}
+
+/*^^^^^^^^^ Variáveis ^^^^^^^^*/
+:root {
+  --singup-logo: 35%;
+  --singup-button: 25%;
+  --singup-textbox: 90%;
+  --font-title-project: medium;
+  --icon-img-card: 20vw;
+  --font-nav: 63%;
+  --notification-padding: 10%;
+
+}
+
+@media (min-width: 800px) {
+  :root {
+      --singup-logo: 15%;
+      --singup-button: 20%;
+      --singup-textbox: 70%;
+      --font-title-project: x-large;
+      --icon-img-card: 7vw;
+      --font-nav: 100%;
+      --notification-padding: 25%;
+
+  }
+}
+/*^^^^^^^^^^^^^^^^ navbar provisória, apenas para testar uns elementos do layout ^^^^^^^^^^^^^^^^*/
+nav {
+  padding: 0;
+  margin: 0;
+  background-color: #51008f;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: var(--font-nav);
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+  padding: 3vh;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/*^^^^^^^^^^^^^^^atribuiçoes ^^^^^^^^^^^^^^^*/
+.details-card{
+  background-color: rgb(255, 255, 255);
+  margin: 2% var(--notification-padding);
+  padding: 2%;
+  border-radius: 5px;
+}
+.details-card h1{
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  text-decoration: none;
+}
+.details-card p{
+  text-indent: 5%;
+  text-align: justify;
+  font-size: medium;
+  margin: 3%;
+}
+.teste-notificacao{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 2% var(--notification-padding);
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.teste-notificacao h1 a{
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  text-decoration: none;
+}
+
+.teste-notificacao img{
+  width: 70%;
+  border-radius: 50%;
+  margin: 1vh;
+}
+.teste-notificacao p{
+  text-indent: 3%;
+  text-align: justify;
+  font-size: medium;
+  margin: 1%;
+}
+
+/*^^^^^^^ Sing in e Sing up ^^^^^^^^^^^^^^*/
+
+
+.box {
+  width: auto;
+  background: #fff;
+  text-align: center;
+  margin: 1vw;
+}
+
+.box img {
+  padding: 3vh;
+  width: var(--singup-logo);
+  border-radius: 25px;
+}
+
+.input-text {
+  color: #fff;
+  width: var(--singup-textbox);
+  height: 3vh;
+  margin: 5px;
+  background-color: #ADADAD;
+  border: 0px;
+  border-radius: 5px;
+  outline: none;
+  font-size: medium;
+  padding: 5px 10px;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.input-text:hover {
+  background-color: #8022C9;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.box button {
+  width: var(--singup-button);
+  margin: 1vw;
+  margin-bottom: 2vh;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #ADADAD;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.box button:hover {
+  background-color: #51008f;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^ Projetos ^^^^^^^^^^^^^^^^^^^^^^^^*/
+.card {
+  background-color: #ffffff;
+  backdrop-filter: blur(5px);
+  height: auto;
+  margin: 2vh 5vh 0vh 5vh;
+  text-align: center;
+  padding: 1vh;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  font-size: 150%;
+  border-radius: 5px;
+}
+
+.card input {
+  width: 70%;
+  height: 5vh;
+  /*font-size: 3vh;
+  background: white;
+  border: none;
+  border-bottom: 3px;
+  border-color: #fff;
+  margin: 3%;*/
+  outline: 0;
+}
+
+.pesquisa {
+  height: 5vh;
+  font-size: 50%;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 3vw;
+  background-color: #51008f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.pesquisa:hover {
+  background-color: #8022C9;
+}
+
+.card img {
+  height: var(--icon-img-card);
+  border-radius: 50%;
+}
+
+.card p {
+  font-size: 70%;
+  padding: 1%;
+}
+
+/*.card a{
+  color: black;
+}*/
+.details {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100%;
+  color: black;
+  font-style: bold 3px;
+  background-color: #ADADAD;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+.details:hover {
+  background-color: #8022C9;
+  color: #fff;
+}
+
+.card p a {
+  background-color: #ADADAD;
+  border-radius: 5px;
+}
+footer{
+  padding: 10px;
 }
